@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+}
+body {
+   
+   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sidebar{
+   margin-right: 35px;
+}
+.menu1{
+       background-color: black;
+       margin-top: 45px;
+       width: 174px;
+       display: flex;
+       padding: 5px;
+            
+       /* justify-content: center; */
+       border-bottom-right-radius: 25px;
+       border-top-right-radius: 25px;
+}
+.menu1 img{
+            margin-left: 30px;
+            align-items: center;
+}
+.menu1 .task .tsak-btn{
+   color: white;
+    margin-left: 26px;
+    line-height: 28px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+.menu2{
+    margin-top: 25px;
+    display: flex;
+}
+.menu2 img{
+            margin-left: 30px;
+            align-items: center;
+}
+.menu2 .Location .location-btn{
+   border: none;
+    cursor: pointer;
+    background: none;
+    /* color: white; */
+    margin-left: 26px;
+    font-size: 16px;
+   /* line-height: 28px; */
+}
+.menu3{
+            margin-top: 450px;
+            display: flex;
+}
+.menu3 img{
+            margin-left: 30px;
+            align-items: center;
+}
+.menu3 .btn-logout{
+            font-weight: bold;
+            font-size: 14px;
+            margin-left: 30px;
+            background: none; 
+            
+            border: none;
+            cursor: pointer;
+}
+section{
+      display: flex;
+}
+.content .Add-new-task-btn{
+      border: none;
+      font-size: 16px;
+      background: none;
+      font-weight: bold;
+      cursor: pointer;
+}
+.content{
+            /* text-align: right; */
+         margin-left: 50px;
+            margin-top: 45px;
+
+}
+.content p{
+            cursor: pointer;
+            font-weight: bold;
+}
+/*######################  "New Task  pop up" styling ###################*/
+.new-task-modal{
+   width: 100%;
+   height: 100%;
+   /* position: absolute;
+   /* top: 0; */
+   display: none; 
+   justify-content: center;
+   align-items: center;
+}
+.container{
+   /* position: fixed; */
+   background-color: white;
+   padding: 20px 50px;
+   width: 500px;
+   border-radius: 10px;
+   height: 400px;
+   margin-top: 155px; 
+    margin-left: 50px;
+   /* margin-top: 8%; */
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   /* border: 2px solid black; */
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+}
+ul{
+   list-style-type: none;
+}
+.newtask h3{
+   text-align: left;
+   margin-left: -18px;
+   margin-bottom: 15px;
+}
+.input-group .summary{
+   /* margin-top: 60px; */
+   position: absolute;
+   top: 50%;
+    left: 4%;
+    transform: translateY(-50%);
+   
+}
+.input-group .discription{
+   position: absolute;
+    top: 37%;
+    left: 4%;
+    transform: translateY(-50%);
+
+}
+.input-group .duedate{
+   position: absolute;
+   top: 49%;
+   left: 4%;
+    transform: translateY(-50%);
+
+}
+.input-group{
+   position: relative;
+   /* flex-direction: column; */
+
+}
+.input-group input,
+.input-group textarea {
+   width: 94%;
+   padding: 20px;
+   border: none;
+   outline-width: 0;
+   margin-left: 40px;
+}
+.btn {
+   margin: 0 87px;
+   width: 65%;
+   font-size: 20px;
+   margin-top: 23px;
+   border-radius: 100px;
+   padding: 10px;
+   position: relative;
+   justify-content: center;
+   text-align: center;
+}
+.save {
+   color: white;
+   background-color: black;
+   border: none;
+   cursor: pointer;
+}
+.cancel{
+   border: none;
+   background: none;
+   cursor: pointer;
+}
+.cancel:hover{
+   border: none;
+   background-color: black;
+   color: white;
+   cursor: pointer;
+}
+
+/* #######################  "Pop up menu"  styling*/
+.pop-up{
+   /* display: flex; */
+   position: fixed;
+   top: 8%;
+   right: 2%;
+   flex-direction: column;
+   
+}
+.upper{
+   display: flex;
+   background-color: #FFFFFF;
+   border: 3px solid #F6F5F5;
+   
+   padding: 20px 20px 20px 20px;
+   border-top-left-radius: 12px;
+   border-top-right-radius:12px ;
+}.upper .resume{
+   font-weight: bold;
+}
+.clock{
+   margin-left: 35px;
+}
+.lower{
+   background-color: #F6F5F5;
+   border: 3px solid #F6F5F5;
+   padding-top: 7px;
+   padding-bottom: 7px;
+   padding-left: 163px;
+   border-bottom-left-radius: 12px;
+   border-bottom-right-radius:12px 
+}
+.lower .remind-me{
+   margin-right: 25px;
+   border: none;
+   cursor: pointer;
+   font-weight: bold;
+
+}
+.lower .Skip{
+   margin-right: 24px;
+   border: none;
+   cursor: pointer;
+
+}
+
+
+
+
+
+
+
+

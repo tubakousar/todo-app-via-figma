@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add new task.css">
+    <!-- <link rel="stylesheet" href="new task.css"> -->
+    <script src="add new task.js" defer></script>
+    <title>Add new task</title>
+    
+</head>
+<body>
+    <section>
+        <div class="sidebar">
+            <div class="menu1">
+                <div>
+                    <img src="Vector.png" alt="">
+                </div>
+                <div class="task">
+                    <!-- <span>Task</span> -->
+                    <button type="button" class="tsak-btn" onclick="ClickTask()">Task</button>
+                </div>
+            </div>
+    
+            <div class="menu2">
+                <div>
+                    <img src="location.png" alt="">
+                </div>
+                <div class="Location">
+                    <!-- <span>Location</span> -->
+                    <button type="button" class="location-btn" onclick="ClickLocation()">Location</button>
+                </div>
+            </div>
+    
+            <div class="menu3">
+                <div>
+                    <img src="Group 21.png" alt="">
+                </div>
+                <div >
+                    <button class="btn-logout" onclick="logout()">Logout</button>
+                </div>
+            </div>
+            
+        </div>
+    
+        <div class="content">
+            <div>
+                <button type="text" class="Add-new-task-btn" onclick="showModal();">+ Add new task</button>
+                <p>Incompleted</p>
+                <ul class="IncompleteTasks">
+                </ul>
+                
+                <p>Completed</p>
+                <ul class="completedTasks">
+                </ul>
+            </div>
+        </div>
+
+        <!--############ New task modal ############ -->
+        <div class="new-task-modal mymodel ">
+            <form class="container">
+                <div class="newtask">
+                    <h3>New task</h3>
+                </div>
+                 <div class="input-group">
+                   <img src="summary.png" alt="" class="summary">
+                    <input type="text" class="input add-summary" placeholder="summary" required>
+                    <hr>
+                </div>
+                <div class="input-group">
+                    <img src="discription.png" alt="" class="discription">
+                    <textarea name="" class="input add-discription" placeholder="discription"></textarea> 
+                     <hr class="medium">
+                </div> 
+                <div class="input-group">
+                    <img src="duedate.png" alt="" class="duedate">
+                    <input type="date" class="input add-date" name="date" placeholder=" due date" >
+                    <hr>
+                </div>
+                <div>
+                    <button type="submit" class="save btn" onclick="closeModal()">save</button>
+                    <button type="button" class="cancel btn" onclick="closeModal()">Cancel</button>
+                </div>
+                 
+            </form>
+        </div>       
+    </section>
+  <!-- ####### Pop uo menu ############ -->
+    <section class="pop-up">
+        <div class="upper">
+            <div>
+                <p class="resume">Submit my resume</p>
+                <p>Send my resume to Digital Tolk</p>
+
+            </div>
+            <div class="clock">
+                <img src="popup clock.png" alt="">
+            </div>
+        </div>
+        <div class="lower">
+            <button class="Skip" id="Skip" onclick="ClosePopUp()">Skip</button>
+            <button class="remind-me" onclick="RemindMeLater()">Remind me Later</button>
+            
+        </div>
+    </section>
+
+    
+    
+</body>
+</html>
